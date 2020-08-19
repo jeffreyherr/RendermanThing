@@ -1,6 +1,6 @@
 # Renderman environment
 
-Built this lit graphic using Pixar's Renderman
+Built this scene using Pixar's Renderman
 
 TO RENDER
 1) compile shaders: shader myShader.sl
