@@ -20,7 +20,7 @@ double[] black = {0.0,0.0,0.0};
 	boolean ship2=false; 
 
 
-
+//creating constants that dictate colors, angles, sizes
 int constant = 1000;
 	int ellipsoid = 1001;
 	int segment_blob = 1002;
@@ -115,18 +115,18 @@ void main ()
 
 
 
-  //where the normal ass shit starts
+  
 
   
 
   RiBegin(RI_NULL);
-
+  //camera perspective	
   RiFormat(800,600,1.0);
   RiProjection("perspective",RI_NULL);
 
   RiPixelSamples(1,1);
 
-
+  //lighting
   double intensity = 0.3;
   RiLightSource("ambientlight", "intensity", intensity, RI_NULL);
   double otherintensity = 1.2;
@@ -260,7 +260,7 @@ public  void example(String[] rules, String axiom, int depth, double angle,
 	String sample = new PlantMaker().makePlant(pm,depth,percent);
 
 	System.out.println(sample);
-
+	
 	PlantRenderer pr = new PlantRenderer(sample,
 			new TurtleBuilder().length(length).width(width).angleX(angle).angleY(angle).angleZ(angle).build());
 
